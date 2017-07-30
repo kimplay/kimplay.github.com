@@ -194,8 +194,10 @@ a.footnote {
   display: inline-block;
 
   a {
+    font-weight: 700;
+    color: $text-color;
     padding: 19px 20px 15px;
-    color: $grey-text-color;
+//    color: $grey-text-color;
     display: block;
     font-size: 14px;
     color: $grey-5;
