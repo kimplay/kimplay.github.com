@@ -138,8 +138,9 @@ a.footnote {
   vertical-align: middle;
 }
 .blog-title {
-  font-size: $blog-font-size-sm;
-  color: $grey-text-color;
+  font-size: $blog-font-size-sm+2px;
+  font-weight: 700;
+  color: $text-color;
 }
 .atom-img {
   display: inline-block;
@@ -238,20 +239,32 @@ a.footnote {
 
 /* blog list */
 
-.posts .post-author-info { /*추후에는 blog list 의 post-author-info와 blog의 post-author-info를 분리하는게 좋을 듯.*/
-  margin: 0;
-  text-align: left;
-}
-.posts .post-author-info .portrait {
-  width: 68px;
-  vertical-align: middle;
-  border-radius: 50%;
-  float: right;
-  margin-left: 56px;
-}
-.posts li {
+.posts .post-item {
+  witdh: 680px;
   border-bottom: 1px solid $divider-color;
   padding: 8% 0;
+}
+
+.posts .post-author-info { /*추후에는 blog list 의 post-author-info와 blog의 post-author-info를 분리하는게 좋을 듯.*/
+  margin: 0 10px 0 20px;
+  width: 650px;
+  text-align: left;
+}
+//me
+//.posts .post-author-info .portrait {
+//  width: 68px;
+//  vertical-align: middle;
+//  border-radius: 50%;
+//  float: right;
+//  margin-left: 56px;
+//}
+
+//.posts li {
+//  border-bottom: 1px solid $divider-color;
+//  padding: 8% 0;
+//}
+.posts p {
+  width: 630px;
 }
 .list-type-none {
   list-style: none;
@@ -348,6 +361,7 @@ figcaption {
   }
 }
 .post-date {
+  width: 630px;
   margin-bottom: 10px;
   color: $grey-text-color;
 }
