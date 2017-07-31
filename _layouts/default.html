@@ -9,15 +9,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>kimplay</title>
   <link rel="stylesheet" href="/css/styles.css">
-<!--me  <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Spoqa 기술 블로그">-->
+<!--me  <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Spoqa 기술 블로그">
+저 아톰파일이 도대체 뭐란말인가? 지금은 저 파일의 모든것을 주석으로 해두었음-->
   <link rel="shortcut icon" href="/images/favicon_.ico">
-  <style type="text/css">
-    @media only screen and (max-width: 580px) {
-      .btn-job {
-        display: none;
-      }
-    }
-  </style>
+
 </head>
     
     
@@ -32,39 +27,14 @@
           <input type="checkbox" id="toggle">
           <label for="toggle" class="toggle" onclick></label>
           <ul class="menu">
-<!--me
             <li><a class="
-              {% if page.url == '/about.html' %}
-              selected
-              {% endif %} menu-about" href="/about.html">소개</a></li>
--->
-            <li><a class="
-              {% if page.url != '/about.html' and page.url != '/jobs.html' %}
+              {% if page.url != '/about.html' %}
               selected
               {% endif %} menu-blog" href="/index.html">블로그</a></li>
-<!--me
-            <li><a class="menu-github" href="https://github.com/spoqa">GitHub</a></li> -->
-<!--me
-            {% if site.trawler_mode %}
-            <li><a class="
-              {% if page.url == '/jobs.html' %}
-              selected
-              {% endif %} menu-job" href="/jobs.html">채용정보</a></li>
-            {% endif %}
--->
           </ul>
         </div>
       </div>
     </div>
-    <!--<div class="hiring-banner">
-      <div class="hiring-fixedwidth-wrap">
-        <div class="hiring-content">
-          <h2 class="hiring-title">당신과 함께<br> 일하고 싶습니다.</h2>
-          <div class="hiring-subtitle">스포카에서 배우고 성장하면서, <br>서비스와 제품을 함께 만들어 나갈 <br>크리에이터를 모집합니다.</div>
-          <a class="btn-job" type="button" href="/jobs.html">채용 공고 보기</a>
-        </div>
-      </div>
-    </div>-->
     <div class="content">
       {{ content }}
     </div>
@@ -72,10 +42,7 @@
     </div>
     <div class="footer">
       <div id="info">
-<!--me
-        <span>© <a href="https://www.spoqa.com/">Spoqa</a> Inc. All rights reserved.</span>
-        <span>Powered by <a href="https://pages.github.com/">GitHub Pages</a>.</span>
--->
+        <span> </span>
       </div>
     </div>
   </div>
