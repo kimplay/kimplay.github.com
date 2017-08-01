@@ -26,11 +26,14 @@
   padding: 3% 5%;
 }
 
-.spoqa_intro {
+.intro {
   padding-top: 28px;
 }
 
 /* text style */
+.intro h2 {
+  color: $pgreen-0;
+}
 .post {
   p a,
   ol a,
