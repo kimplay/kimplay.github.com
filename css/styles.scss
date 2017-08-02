@@ -132,18 +132,11 @@ a.footnote {
   margin-left: auto;
   margin-right: auto;
 }
-.spoqa-logo-wrap {
+.blog-title {
   padding-top: 20px;
   float:left;
 }
-.spoqa-logo img {
-  width: 60px;
-  height: auto;
-  padding-top: 1px;
-  padding-right: 6px;
-  vertical-align: middle;
-}
-.blog-title {
+.blog-title a {
   font-size: $blog-font-size-sm+2px;
   font-weight: 700;
   color: $text-color;
@@ -743,7 +736,7 @@ figcaption {
   .back-btn a {
     padding: 20px 25%;
   }
-  .spoqa-logo-wrap {
+  .blog-title {
       float:none;
   }
   .pagination .previous {
@@ -753,58 +746,6 @@ figcaption {
     float: right;
   }
 }
-
-// job-table
-
-.job-table {
-  margin-top: 20px;
-}
-
-.job-table > thead {
-  border-top: 1px solid $table-border-color;
-}
-
-.job-table > thead > tr,
-.job-table > tbody > tr {
-  border-bottom: 1px solid $table-border-color;
-  background-color: #fff;
-}
-
-.job-table > thead > tr > th {
-  font-weight: 700;
-  text-align: center;
-  vertical-align: middle;
-  border-color: $table-border-color;
-  padding: 16px;
-  color: $grey-text-color;
-}
-
-.job-table > tbody > tr >td {
-  font-weight: normal;
-  text-align: center;
-  vertical-align: middle;
-  border-color: $table-border-color;
-  padding: 16px 0;
-
-  > a {
-    display: inline-block;
-    width: 100%;
-  }
-}
-
-.job-table > tbody > tr:hover {
-  background-color: white;
-
-  >td {
-    -webkit-transition: 0.2s ease-out all;
-    background-color: $grey-bg-color;
-
-    >a {
-      color: $hightlight-text-color;
-    }
-  }
-}
-
 
 /* fb comment plug-in overrides */
 .fb-comments > span {
