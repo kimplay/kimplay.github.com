@@ -27,14 +27,7 @@
 }
 
 /* text style */
-.intro {
-  margin-top: 90px;
-  padding: 0 20px;
-}
-.intro h2 {
-  color: $pgreen-0;
-  margin: 80px 0 26px;
-}
+
 .post {
   p a,
   ol a,
@@ -117,15 +110,15 @@ a.footnote {
     font-size: $blog-font-size-sm;
   }
 }
-
+ 
 // header
 .header {
   height: 60px;
-  padding: 0 1%;
-  background-color: #fff;
-  border-bottom: 1px solid $divider-color; 
+  padding: 0 10%;
   position: fixed;
-  width: 100%;
+  width: 80%;
+  background-color: #fff;
+  border-bottom: 1px solid $divider-color;   
 }
 .header-item {
   max-width: 700px;
@@ -200,12 +193,10 @@ a.footnote {
     display: block;
     font-size: 14px;
     color: $grey-5;
-    @media only screen and (max-width: 580px) {
-      font-size: 17px;
-      color: $text-color;
-    }
-
-
+//    @media only screen and (max-width: 580px) {
+//      font-size: 17px;
+//      color: $text-color;
+//    }
     &:active,
     &.selected {
       -webkit-transition: 0.2s ease-out all;
@@ -407,102 +398,25 @@ figcaption {
 .back-btn a:hover {
   background-color: $btn-default-active-bg-color;
   border-color: $btn-border-color;
-}
+} 
 
 /* blog ends */
 
 /* about */
 
-.post .intro-title {
-  margin-top: 20px;
-  padding-bottom: 12px;
-  font-size: $blog-font-size-lg;
-  border-bottom: 1px solid $divider-color;
+.intro {
+  margin-top: 90px;
+  padding: 0 20px;
 }
-.about p a,
-.about ol a,
-.about ul a {
-  padding-right: 2px;
+.intro h2 {
+  color: $pgreen-0;
+  margin: 70px 0 26px;
 }
-.author {
-  overflow: auto;
-  padding: 30px 0;
-  border-bottom: 1px solid $divider-color;
+.about {
+  margin-top: 42px;
 }
-.author-title {
-  margin-top: 100px;
-}
-.author-info {
-  margin-top: 3px;
-  margin-left: 20%;
-}
-.member-info {
-}
-.sns a {
-  margin: -5px 2px 0 0;
-  vertical-align: middle;
-}
-.nick-name {
-  margin-right: 10px;
-  font-weight: bold;
-}
-.nick-name a {
-  color: $text-color;
-}
-.author img {
-  width: 14%;
-  padding: 0;
-  border-radius: 50%;
-  float: left;
-}
-.twitter-icon {
-  display: inline-block;
-  background-image: url(/images/twitter-icon.png);
-  background-size: 24px 24px;
-  width: 24px;
-  height: 24px;
-}
-.facebook-icon {
-  display: inline-block;
-  background-image: url(/images/facebook-icon.png);
-  background-size: 24px 24px;
-  width: 24px;
-  height: 24px;
-}
-.tumblr-icon {
-  display: inline-block;
-  background-image: url(/images/tumblr-icon.png);
-  background-size: 24px 24px;
-  width: 24px;
-  height: 24px;
-}
-.dribbble-icon {
-  display: inline-block;
-  background-image: url(/images/dribbble-icon.png);
-  background-size: 24px 24px;
-  width: 24px;
-  height: 24px;
-}
-.linkdin-icon {
-  display: inline-block;
-  background-image: url(/images/linkdin-icon.png);
-  background-size: 24px 24px;
-  width: 24px;
-  height: 24px;
-}
-.wordpress-icon {
-  display: inline-block;
-  background-image: url(/images/wordpress-icon.png);
-  background-size: 24px 24px;
-  width: 24px;
-  height: 24px;
-}
-.homepage-icon {
-  display: inline-block;
-  background-image: url(/images/homepage-icon.png);
-  background-size: 24px 24px;
-  width: 24px;
-  height: 24px;
+.about h2 {
+  margin-top: 42px;
 }
 
 /* footer */
@@ -520,72 +434,8 @@ figcaption {
 }
 
 
-/* hiring banner 
-
-.hiring-banner {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 5%;
-  height: 430px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(/images/hiring-imagex1.jpg);
-  background-color: #fff;
-  background-position: left bottom;
-  -webkit-transition: 0.2s ease-out all;
-
-}
-.lt-ie9 .hiring-banner {
-  background-image: url(/images/hiring-imagex1.jpg) no-repeat;
-  background-position: left bottom;
-}
-.hiring-fixedwidth-wrap {
-  max-width: 700px;
-  margin: 0 auto;
-  position: relative;
-}
-.hiring-content {
-  top: 80px;
-  right: 11px;
-  display: block;
-  position: absolute;
- text-shadow: 0px 0px 20px rgba(248,248,246, 0.6),
-              0px 0px 30px rgba(248,248,246, 0.6);
-}
-.hiring-title {
-  margin-bottom: 20px;
-  font-size: 48px;
-  font-weight: 100;
-  line-height: 1.1em;
-  color: $text-color;
-  -webkit-transition: 0.2s ease-out all;
-}
-.hiring-subtitle {
-  color: $text-color;
-  font-weight: normal;
-  -webkit-transition: 0.2s ease-out all;
-  line-height: 1.5em;
-}
-.btn-job {
-  margin-top: 24px;
-  padding: 17px 15%;
-  display: inline-block;
-  border: 1px solid $primary-color;
-  border-radius: 2px;
-  color: $hightlight-text-color;
-  background-color: rgba(255, 255, 255, 0.7);
-  -webkit-transition: 0.2s ease-out all;
-}
-.btn-job:hover {
-  color: $hightlight-text-color;
-  background-color: transparent;
-  border: 1px solid $primary-color;
-  background-color: rgba(76, 128, 241, 0.1);
-}
-
-*/
-
 /* responsive */
+
 @media only screen and (max-width: 650px) {
   body {
     width: 100%;
@@ -619,57 +469,37 @@ figcaption {
     height: 60px;
   }
   .toggle {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    user-select: none;
-  }
-  .menu {
     display: none;
-    margin: 10px 5% 0;
-    width: 90%;
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 2px;
-    text-align: center;
+//    position: relative;
+//    cursor: pointer;
+//    -webkit-touch-callout: none;
+//    -webkit-user-select: none;
+//    user-select: none;
   }
-  .menu li {
-    display: block;
-  }
-  .menu li a {
-    padding: 15px 0;
-    width: 100%;
-  }
-  .hiring-banner {
-    height: 380px;
-    cursor: pointer;
-  }
-  .hiring-content {
-    top: 60px;
-    right:0;
-    left:0;
-    margin: 0;
-    text-align:center;
-  }
-  .hiring-title {
-    font-size: $blog-font-size-lg;
-  }
-  .hiring-subtitle br{
-    display: none;
-  }
-  .btn-job {
-    width: 70%;
-  }
-  .post-author-info .portrait {
-    width: 40%;
-  }
-  .posts .portrait {
-    display: none;
-  }
+//  .menu {
+//    display: none;
+//    margin: 10px 5% 0;
+//    width: 90%;
+//    position: absolute;
+//    z-index: 1;
+//    right: 0;
+//    background: rgba(255, 255, 255, 0.9);
+//    border-radius: 2px;
+//    text-align: center;
+//  }
+//  .menu li {
+//    display: block;
+//  }
+//  .menu li a {
+//    padding: 15px 0;
+//    width: 100%;
+//  }
+//  .post-author-info .portrait {
+//    width: 40%;
+//  }
+//  .posts .portrait {
+//    display: none;
+//  }
   .posts li {
     padding: 15% 0;
   }
