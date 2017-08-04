@@ -9,16 +9,19 @@ layout: default
   {% if page.author-email %}
 <!--me    <img class="portrait" src="{{base_path}}/images/profile/{{page.author-email}}.png" />-->
     <h1 class="post-title">{{page.title}}</h1>
-    <span class="post-date">{{ page.date | date: "%Y년 %m월 %d일" }}</span>
+    <span class="tag">{{page.tag}}</span>
+    <span class="sep">|</span>
+    <span class="post-date">{{ page.date | date: "%Y-%m-%d" }}</span>
+    <!--  {% else %}-->
+<!--mm 순서 바꿔놓음
+    <h1 class="post-title">{{page.title}}</h1>
+    <span class="post-date">{{ page.date | date: "%Y년 %m- %d일" }}</span>
     <span class="sep">|</span>
     <span class="author-name"><a href="mailto:{{page.author-email}}">{{page.tag}}</a></span>
-  {% else %}
-    <h1 class="post-title">{{page.title}}</h1>
-    <span class="post-date">{{ page.date | date: "%Y년 %m월 %d일" }}</span>
-    <span class="sep">|</span>
-    <span class="author-name">{{page.tag}}</span>
+-->
 
-  {% endif %}
+
+<!--  {% endif %}-->
 </div>
 {% endif %}
 
@@ -27,6 +30,8 @@ layout: default
 {% else %}
   <div class="post">{{ content }}</div>
 {% endif %}
+<!--이 윗부분 나중에 손봐야할듯-->
+
 
 <div class="post-footer">
   <div class="back-btn"><a href="/">목록으로 돌아가기</a></div>
