@@ -18,3 +18,6 @@ sass:
 trawler_mode: true
 gems: [jekyll-paginate]
 future: true
+
+google-analytics:
+  id: "UA-105860377-1"
