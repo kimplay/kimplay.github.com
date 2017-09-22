@@ -404,20 +404,21 @@ figcaption {
 /* blog ends */
 
 /* about */
-
+.post {
+  position: absolute;
+  top: 100px;
+}
 .intro {
-  margin-top: 90px;
+  margin-top: 30px;
   padding: 0 20px;
 }
 .intro h2 {
   color: $pgreen-0;
-  margin: 70px 0 26px;
+  margin: 36px 0 8px;
 }
 .about {
-  margin-top: 42px;
-}
-.about h2 {
-  margin-top: 42px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid $divider-color;
 }
 
 /* footer */
